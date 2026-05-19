@@ -9,8 +9,7 @@ namespace TechJockeys.Models
 
         public String Name { get; set; }
 
-
-
-
+        // child ref to products 1 category - many products. ref MUSST BE nulllable with ? 
+        public List<Product>? Products { get; set; }
     }
 }
