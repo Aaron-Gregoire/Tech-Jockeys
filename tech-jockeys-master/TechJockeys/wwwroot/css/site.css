@@ -1,5 +1,7 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cousine:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 html {
-  font-size: 14px;
+    font-size: 14px;
 }
 
 @media (min-width: 768px) {
@@ -18,7 +20,11 @@ html {
 }
 
 body {
-  margin-bottom: 60px;
+    font-family: "Cousine", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+    margin-bottom: 60px;
+    color: #212121;
 }
 
 .form-floating > .form-control-plaintext::placeholder, .form-floating > .form-control::placeholder {
@@ -28,4 +34,22 @@ body {
 
 .form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
   text-align: start;
+}
+
+.navbar-dark {
+    background-color: #455A64;
+}
+footer {
+    background-color: #CFD8DC;
+}
+
+a, a:visited {
+    color: #4CAF50;
+}
+
+.btn-primary {
+    background-color: #4CAF50;
+}
+.btn-primary:hover {
+    background-color: #5FDE64;
 }
