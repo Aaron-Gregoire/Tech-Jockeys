@@ -53,3 +53,6 @@ a, a:visited {
 .btn-primary:hover {
     background-color: #5FDE64;
 }
+.thumb{
+    width:100px;
+}

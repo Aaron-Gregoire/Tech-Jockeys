@@ -83,6 +83,12 @@ namespace TechJockeys.Controllers
                 //invalid => reload page w/ existing values
                 return View(product);
             }
+            //upload image if any
+            if(Image != null)
+            {
+                var fileName = UploadImage(Image);
+                product.Image = fileName; //include unique image name into product before saving
+            }
 
             //data valid => save to db
             _context.Product.Update(product);
